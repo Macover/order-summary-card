@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.flex-container{
+    height: 100vh;
+    display: flex;
+    background: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;    
+    background-size: 100%;
+    background-color: rgb(224, 232, 255);
+}
+.flex__card-container{
+    max-width: 400px;
+    min-height: 600px;
+    background: #fff;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 10px 20px #ccc;
+}
+.flex__img-container{
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.flex__title-h2{
+    text-align: center;
+    font-weight: 800;
+    padding: 20px;
+}
+.flex__p{
+    font-size: 16px;
+    padding: 0px 20px;
+    text-align: center;
+    font-weight: 400;
+}
+.flex__plan-grid-container{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 25% 45% 1fr;
+    grid-template-rows: repeat(1,1fr);
+    background-color: rgb(248, 249, 254);
+    padding: 20px;
+    border-radius: 15px;
+}
+.plan-grid__icon{
+    grid-row: span 2;
+}
+.plan-grid__price{
+    order: 2;
+}
+.plan-grid__button-change{
+    text-align: center;
+    margin: auto;
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    grid-row: span 2;
+    align-content: flex-end;
+    cursor: pointer;
+}
+.plan-grid__button-change:hover{
+    color: rgb(118, 108, 241);
+}
+.flex__button-submit{
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 3px 12px 10px #aaa;
+    transition: font-size .5s;
+    transition-timing-function: ease-out;
+}
+.flex__button-submit:hover{
+    font-size: 15px;
+    background-color: rgb(118, 108, 241);
+}
+.flex__cancel-button{
+    width: 80%;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: #777;
+    font-size: 13px;
+    font-weight: 700;
+    transition: font-size, color, 1s;
+}
+.flex__cancel-button:hover{
+    color: #000;
+    font-size: 15px;
+}
